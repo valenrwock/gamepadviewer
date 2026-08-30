@@ -8,7 +8,7 @@
     height: 896px;
 
     /* CAMBIÁ ESTA URL por la URL pública de tu PNG */
-    background-image: url("TU_IMAGEN_AQUI.png");
+    background-image: url("https://raw.githubusercontent.com/valenrwock/gamepadviewer/refs/heads/main/gamepad1.png");
     background-repeat: no-repeat;
     background-size: 1181px 896px;
     background-position: 0 0;
