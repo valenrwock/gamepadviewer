@@ -1,0 +1,305 @@
+/* =========================================
+   CUSTOM XBOX - DISEÑO VERDE / NEGRO
+   GamePad Viewer Beta
+   ========================================= */
+
+.controller.custom {
+    width: 1181px;
+    height: 896px;
+
+    /* CAMBIÁ ESTA URL por la URL pública de tu PNG */
+    background-image: url("TU_IMAGEN_AQUI.png");
+    background-repeat: no-repeat;
+    background-size: 1181px 896px;
+    background-position: 0 0;
+
+    position: relative;
+}
+
+/* Ocultar todo cuando se desconecta */
+.controller.custom.disconnected div {
+    display: none;
+}
+
+
+/* =========================================
+   TRIGGERS LT / RT
+   ========================================= */
+
+.custom .triggers {
+    position: absolute;
+    width: 790px;
+    height: 115px;
+    left: 195px;
+    top: 20px;
+}
+
+.custom .trigger {
+    width: 115px;
+    height: 115px;
+    background: none;
+    opacity: 0;
+}
+
+.custom .trigger.left {
+    float: left;
+}
+
+.custom .trigger.right {
+    float: right;
+}
+
+/* LT / RT presionados */
+.custom .trigger.pressed {
+    opacity: 0.35;
+    background: #59e6b0;
+    border-radius: 40px;
+    box-shadow: 0 0 25px #59e6b0;
+}
+
+
+/* =========================================
+   LB / RB
+   ========================================= */
+
+.custom .bumpers {
+    position: absolute;
+    width: 805px;
+    height: 45px;
+    left: 185px;
+    top: 78px;
+}
+
+.custom .bumper {
+    width: 115px;
+    height: 40px;
+    background: none;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.custom .bumper.left {
+    float: left;
+}
+
+.custom .bumper.right {
+    float: right;
+}
+
+.custom .bumper.pressed {
+    opacity: 0.35;
+    background: #59e6b0;
+    box-shadow: 0 0 20px #59e6b0;
+}
+
+
+/* =========================================
+   BOTONES A B X Y
+   ========================================= */
+
+.custom .abxy {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 765px;
+    top: 190px;
+}
+
+.custom .button {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    background: none;
+    border-radius: 50%;
+}
+
+/* A */
+.custom .a {
+    left: 55px;
+    top: 115px;
+}
+
+/* B */
+.custom .b {
+    right: 0;
+    top: 40px;
+}
+
+/* X */
+.custom .x {
+    left: 0;
+    top: 40px;
+}
+
+/* Y */
+.custom .y {
+    left: 55px;
+    top: 0;
+}
+
+/* Efecto al pulsar */
+.custom .button.pressed {
+    background: rgba(89, 230, 176, 0.35);
+    box-shadow:
+        0 0 15px #59e6b0,
+        inset 0 0 15px #59e6b0;
+    margin-top: 3px;
+}
+
+
+/* =========================================
+   STICKS
+   ========================================= */
+
+.custom .sticks {
+    position: absolute;
+    width: 535px;
+    height: 185px;
+    left: 235px;
+    top: 270px;
+}
+
+.custom .stick {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    background: none;
+    border-radius: 50%;
+}
+
+/* Stick izquierdo */
+.custom .stick.left {
+    left: 0;
+    top: 0;
+}
+
+/* Stick derecho */
+.custom .stick.right {
+    right: 0;
+    bottom: 0;
+}
+
+/* Stick presionado */
+.custom .stick.pressed {
+    background: rgba(89, 230, 176, 0.30);
+    box-shadow:
+        0 0 20px #59e6b0,
+        inset 0 0 20px #59e6b0;
+}
+
+
+/* =========================================
+   D-PAD
+   ========================================= */
+
+.custom .dpad {
+    position: absolute;
+    width: 185px;
+    height: 185px;
+    left: 345px;
+    top: 395px;
+}
+
+.custom .face {
+    position: absolute;
+    background: none;
+}
+
+/* Arriba / abajo */
+.custom .face.up,
+.custom .face.down {
+    width: 65px;
+    height: 90px;
+}
+
+/* Izquierda / derecha */
+.custom .face.left,
+.custom .face.right {
+    width: 90px;
+    height: 65px;
+}
+
+.custom .face.up {
+    left: 60px;
+    top: 0;
+}
+
+.custom .face.down {
+    left: 60px;
+    bottom: 0;
+}
+
+.custom .face.left {
+    left: 0;
+    top: 60px;
+}
+
+.custom .face.right {
+    right: 0;
+    top: 60px;
+}
+
+/* D-PAD presionado */
+.custom .face.pressed {
+    background: rgba(89, 230, 176, 0.30);
+    box-shadow: 0 0 18px #59e6b0;
+}
+
+
+/* =========================================
+   BACK / START
+   ========================================= */
+
+.custom .arrows {
+    position: absolute;
+    width: 210px;
+    height: 55px;
+    left: 480px;
+    top: 275px;
+}
+
+.custom .back,
+.custom .start {
+    background: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.custom .back {
+    float: left;
+}
+
+.custom .start {
+    float: right;
+}
+
+.custom .back.pressed,
+.custom .start.pressed {
+    background: rgba(89, 230, 176, 0.35);
+    box-shadow: 0 0 18px #59e6b0;
+}
+
+
+/* =========================================
+   QUADRANT / INDICADOR
+   ========================================= */
+
+.custom .quadrant {
+    display: none;
+}
+
+
+/* =========================================
+   QUITAR ELEMENTOS DE LA SKIN ORIGINAL
+   ========================================= */
+
+.custom .button,
+.custom .stick,
+.custom .face,
+.custom .trigger,
+.custom .bumper,
+.custom .back,
+.custom .start {
+    background-image: none;
+}
